@@ -1,0 +1,30 @@
+@import '../variables';
+
+.history {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100px;
+
+    &__link-wrap {
+        @media (max-width: 768px) {
+            order: -3;
+            margin-left: auto;
+        }
+    }
+
+    &__icon-wrap {
+        margin-top: 5px;
+        width: 30px;
+        margin-right: 5px;
+
+        path {
+            fill: $dark;
+        }
+    }
+
+    
+
+   
+}

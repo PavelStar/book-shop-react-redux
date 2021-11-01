@@ -1,0 +1,108 @@
+@import '../variables';
+
+.snippets {
+    display: flex;
+    flex-direction: column;
+    z-index: 100000;
+    // display: none;
+    width: 560px;
+    position: absolute;
+    top: 75px;
+    
+    
+    margin: 0;
+    background-color: $light;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+    @media (max-width: 768px) {
+        width: 95%;
+        // width: 350px;
+        top: 94px;
+    }
+
+    &__btns-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+    }
+    
+    &__results-btn {
+        font-size: 12px;
+        color: $light;
+        padding: 10px 20px;
+        border: none;
+        background-color: $dark;
+        border-radius: 15px;
+    }
+    
+    &__close-btn {
+        font-size: 16px;
+        border: none;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    &__item {
+        display: flex;
+        padding: 10px 20px;
+        
+
+        &:hover {
+            background-color: $light;
+        }
+    }
+
+    &__img-wrapper {
+        display: flex;
+        padding: 0;
+        width: 30px;
+        margin-right: 10px;
+        background-color: $neutral;
+        margin-bottom: auto;
+        border-radius: 6px;
+    }
+    
+    &__item-img {
+        padding: 0;
+        width: 100%;
+        // height: auto;
+        margin-bottom: auto;
+    }
+
+    &__img-empty {
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: $neutral;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        
+        span {
+            
+            display: block;
+            margin: 0 auto;
+            font-size: 10px;
+        }
+    }
+
+    &__item-title {
+        font-size: 16px;
+        line-height: 120%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    &__item-author {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+.show-snippets {
+    display: block;
+}

@@ -1,0 +1,145 @@
+@import '../variables';
+
+.search {
+    width: 560px;
+
+    
+
+    &__inner {
+        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        position: relative;
+        margin-top: 5px;
+    }
+
+    &__type-field {
+        background-color: $light;
+        font-size: 16px;
+        flex-grow: 1;
+        padding: 6px;
+        padding-left: 10px;
+        border: 1px solid $dark;
+        // border-radius: 3px 0px 0px 3px;
+        border-radius: 25px;
+        padding-left: 20px;
+
+        &::placeholder {
+            color: $dark;
+            opacity: 0.5;
+            font-size: 16px;
+            font-weight: 100;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $dark;
+        }
+
+        
+        
+    }
+
+    &__btn {
+        cursor: pointer;
+        font-size: 18px;
+        border: none;
+        margin-left: 5px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        color: $light;
+        background-color: $btns;
+
+        
+
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__btn-icon {
+        margin-bottom: -3px;
+        margin-left: 2px;
+        path {
+            fill: $light;
+        
+        }
+    }
+
+    &__search-type {
+
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+
+        
+        
+        input {
+            background-color: $dark;
+
+            &:checked + label::after {
+                display: block;
+            }
+        }
+        
+        label {
+            cursor: pointer;
+            position: relative;
+            padding-left: 18px;
+            margin-right: 15px;
+
+            &::before {
+                position: absolute;
+                background-color: $light;
+                content: '';
+                width: 14px;
+                height: 14px;
+                left: 0;
+                top: 1px;
+                border-radius: 50%;
+                border: 1px solid $dark;
+            }
+
+            &::after {
+                display: none;
+                position: absolute;
+                background-color: $dark;
+                content: '';
+                width: 8px;
+                height: 8px;
+                left: 3px;
+                top: 4px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__switch-btn-wrap {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__not-found {
+        font-size: 12px;
+        padding: 20px;
+        span {
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+
+
+}
+

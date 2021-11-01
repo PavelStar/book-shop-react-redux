@@ -1,0 +1,136 @@
+@import '../../../components/variables';
+
+.books-container {
+    width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    
+    margin: 0 auto;
+
+    @media (max-width: 1160px) {
+        width: auto;
+    }
+}
+
+.books-loader-wrapper {
+    // background-color: red;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.books-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-gap: 40px 40px;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    &__item {
+        
+        overflow: hidden;
+        background-color: $light;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        &:hover,
+        &:active {
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            
+                transition: 0.5s;
+                transform: scale(105%);
+            
+        }
+    }
+
+    &__card-header {
+        position: relative;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        background-color: $light;
+        padding: 20px;
+        padding-top: 40px;
+    }
+
+    &__card-body {
+        padding: 20px;
+        padding-top: 10px;
+    }
+
+    &__genre {
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        font-size: 12px;
+        padding: 5px 15px;
+        color: $light;
+        background-color: $dark;
+        border-radius: 12px;
+        
+    }
+
+    &__img {
+        image-rendering: pixelated;
+        width: 128px;
+        display: block;
+        margin: 0 auto;
+        // margin-bottom: 15px;
+        border-radius: 15px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+    
+    &__img-empty {
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        align-items: center;
+        width: 128px;
+        height: 200px;
+        border-radius: 20PX;
+        background-color: $neutral;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        border-radius: 15px;
+        
+        span {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    &__author {
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+
+    &__price {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    &__btns-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        // border-top: 1px solid $neutral;
+    }
+
+    
+
+    
+}
+
+

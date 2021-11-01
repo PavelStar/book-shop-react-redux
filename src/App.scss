@@ -1,0 +1,62 @@
+@import './components/variables';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light;
+    overflow: scroll;
+}
+
+button, a {
+    cursor: pointer;
+    padding: 0;
+}
+
+
+
+html {
+    font-family: 'Inter', sans-serif;
+    color: $dark;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+a {
+    color: $dark;
+    text-decoration: none;
+    line-height: 120%;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}

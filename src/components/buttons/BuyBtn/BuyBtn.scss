@@ -1,0 +1,26 @@
+@import '../../variables';
+
+.buy-btn {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $light;
+    background-color: $btns;
+    border: none;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+
+    &--added {
+        background-color: transparent;
+        border: 1px solid $btns;
+        color: $btns;
+    }
+}
