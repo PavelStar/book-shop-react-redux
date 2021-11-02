@@ -1,28 +1,26 @@
-@import '../../variables';
+@import "../../variables";
 
 .home {
-
     &__inner {
         width: 1140px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
 
-    @media (max-width: 1160px) {
-        width: auto;
-        margin: 0 auto; 
-        padding-left: 10px;
-        padding-right: 10px;
+        @media (max-width: 1160px) {
+            width: auto;
+            margin: 0 auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 
-    }
-    
     &__title {
         font-size: 30px;
         line-height: 120%;
         margin-bottom: 20px;
     }
-    
+
     &__popular-wrap {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -31,20 +29,13 @@
             padding-top: 10px;
         }
     }
-
-
 }
 
 .genres {
-    
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, 220px);
     grid-gap: 10px 10px;
-    
-    
-
-    
 
     @media (max-width: 768px) {
         grid-template-columns: repeat(auto-fill, 170px);
@@ -58,7 +49,6 @@
     }
 
     &__item {
-        // width: 200px;
         padding: 40px 20px;
         background-color: $light;
         border-radius: 20px;
@@ -67,7 +57,7 @@
         @media (max-width: 768px) {
             // width: 170px;
         }
-        
+
         img {
             width: 120px;
             display: block;
@@ -80,7 +70,7 @@
                 width: 100px;
             }
         }
-        
+
         a {
             color: $dark;
             text-align: center;

@@ -1,20 +1,21 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import { booksPageReducer } from './reducers/booksPageReducer'
-import { responseReducer } from './reducers/responseReducer'
-import { bookInfoReducer } from './reducers/bookInfoReducer'
-import { paginationReducer } from './reducers/paginationReducer'
-import { cartReducer } from './reducers/cartReducer'
-import { composeWithDevTools } from 'redux-devtools-extension'
-import thunk from 'redux-thunk'
-
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import { booksPageReducer } from "./reducers/booksPageReducer";
+import { responseReducer } from "./reducers/responseReducer";
+import { bookInfoReducer } from "./reducers/bookInfoReducer";
+import { paginationReducer } from "./reducers/paginationReducer";
+import { cartReducer } from "./reducers/cartReducer";
+import { composeWithDevTools } from "redux-devtools-extension";
+import thunk from "redux-thunk";
 
 const rootReducer = combineReducers({
-    booksPageReducer, 
+    booksPageReducer,
     responseReducer,
     bookInfoReducer,
     paginationReducer,
-    cartReducer
-})
+    cartReducer,
+});
 
-
-export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
+export const store = createStore(
+    rootReducer,
+    composeWithDevTools(applyMiddleware(thunk)),
+);

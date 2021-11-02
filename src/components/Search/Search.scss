@@ -1,12 +1,9 @@
-@import '../variables';
+@import "../variables";
 
 .search {
     width: 560px;
 
-    
-
     &__inner {
-        
         display: flex;
         flex-direction: column;
         margin-bottom: 12px;
@@ -25,7 +22,6 @@
         padding: 6px;
         padding-left: 10px;
         border: 1px solid $dark;
-        // border-radius: 3px 0px 0px 3px;
         border-radius: 25px;
         padding-left: 20px;
 
@@ -40,9 +36,6 @@
             outline: none;
             border-color: $dark;
         }
-
-        
-        
     }
 
     &__btn {
@@ -55,8 +48,6 @@
         height: 40px;
         color: $light;
         background-color: $btns;
-
-        
 
         &:hover,
         &:focus {
@@ -74,18 +65,14 @@
         margin-left: 2px;
         path {
             fill: $light;
-        
         }
     }
 
     &__search-type {
-
         margin-top: 10px;
         display: flex;
         align-items: center;
 
-        
-        
         input {
             background-color: $dark;
 
@@ -93,7 +80,7 @@
                 display: block;
             }
         }
-        
+
         label {
             cursor: pointer;
             position: relative;
@@ -103,7 +90,7 @@
             &::before {
                 position: absolute;
                 background-color: $light;
-                content: '';
+                content: "";
                 width: 14px;
                 height: 14px;
                 left: 0;
@@ -116,7 +103,7 @@
                 display: none;
                 position: absolute;
                 background-color: $dark;
-                content: '';
+                content: "";
                 width: 8px;
                 height: 8px;
                 left: 3px;
@@ -130,7 +117,7 @@
         display: flex;
         align-items: center;
     }
-    
+
     &__not-found {
         font-size: 12px;
         padding: 20px;
@@ -139,7 +126,4 @@
             font-size: 14px;
         }
     }
-
-
 }
-

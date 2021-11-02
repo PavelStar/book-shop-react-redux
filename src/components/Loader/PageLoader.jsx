@@ -1,12 +1,25 @@
-import React from 'react'
-import './Loader.scss'
+import React from "react";
+import "./Loader.scss";
 
 const PageLoader = () => {
     return (
         <div>
-            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <div class="lds-default">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default PageLoader
+export default PageLoader;

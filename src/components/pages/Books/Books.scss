@@ -1,11 +1,11 @@
-@import '../../../components/variables';
+@import "../../../components/variables";
 
 .books-container {
     width: 1140px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 20px;
-    
+
     margin: 0 auto;
 
     @media (max-width: 1160px) {
@@ -14,7 +14,6 @@
 }
 
 .books-loader-wrapper {
-    // background-color: red;
     width: 100vw;
     height: 500px;
     display: flex;
@@ -30,7 +29,6 @@
     padding-bottom: 20px;
 
     &__item {
-        
         overflow: hidden;
         background-color: $light;
         display: flex;
@@ -41,10 +39,9 @@
         &:hover,
         &:active {
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-            
-                transition: 0.5s;
-                transform: scale(105%);
-            
+
+            transition: 0.5s;
+            transform: scale(105%);
         }
     }
 
@@ -72,7 +69,6 @@
         color: $light;
         background-color: $dark;
         border-radius: 12px;
-        
     }
 
     &__img {
@@ -80,11 +76,10 @@
         width: 128px;
         display: block;
         margin: 0 auto;
-        // margin-bottom: 15px;
         border-radius: 15px;
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     }
-    
+
     &__img-empty {
         display: flex;
         margin: 0 auto;
@@ -93,11 +88,11 @@
         align-items: center;
         width: 128px;
         height: 200px;
-        border-radius: 20PX;
+        border-radius: 20px;
         background-color: $neutral;
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
         border-radius: 15px;
-        
+
         span {
             display: block;
             margin: 0 auto;
@@ -125,12 +120,5 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 20px;
-        // border-top: 1px solid $neutral;
     }
-
-    
-
-    
 }
-
-

@@ -1,7 +1,6 @@
-@import '../variables';
+@import "../variables";
 
 .history {
-
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -23,8 +22,4 @@
             fill: $dark;
         }
     }
-
-    
-
-   
 }

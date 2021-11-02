@@ -1,13 +1,11 @@
-@import '../variables';
+@import "../variables";
 
 .pagination-list {
     display: flex;
-    // flex-wrap: wrap;
 
     @media (max-width: 768px) {
         flex-wrap: nowrap;
     }
-
 
     &__item {
         margin-right: 10px;
@@ -20,18 +18,17 @@
             margin-right: 0;
         }
     }
-    
+
     &__wrapper {
         margin-bottom: 30px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        
+
         @media (max-width: 768px) {
             justify-content: center;
             flex-wrap: wrap;
         }
-        
 
         button {
             font-size: 14px;
@@ -55,11 +52,8 @@
         }
 
         @media (min-width: 376px) {
-            
             width: auto;
         }
-
-        
     }
 
     &__btn-wrapper {
@@ -83,12 +77,8 @@
             }
         }
 
-        
-
         &:last-of-type {
             order: 9;
-
-            
         }
     }
 
@@ -116,7 +106,7 @@
             padding: 5px;
         }
     }
-    
+
     &__arrow {
         color: $dark;
         background-color: transparent;
@@ -125,21 +115,14 @@
 
         @media (max-width: 768px) {
             padding: 0;
-            
         }
 
         svg {
-            
-
             @media (max-width: 768px) {
                 width: 20px;
                 height: 20px;
             }
         }
-
-        // &:nth-child(3) {
-        //     order: -2;
-        // }
 
         &:first-of-type {
             order: -10;
@@ -153,8 +136,6 @@
             opacity: 0.5;
             cursor: default;
         }
-
-        
     }
 
     &__btn {
@@ -167,21 +148,13 @@
         background-color: transparent;
         border: none;
         border-radius: 50%;
-        
-        
-        // &:hover {
-        //     color: #fff;
-        //     background-color: rgba(43, 48, 22, 1);
-        // }
 
         &:active {
             background-color: $btns;
-            // border: 1px solid red;
             color: $light;
         }
-        
+
         &--active {
-            
             color: $light;
             background-color: $btns;
         }
@@ -197,7 +170,7 @@
 
         @media (max-width: 768px) {
             margin-left: auto;
-            margin-top: 10px;   
+            margin-top: 10px;
         }
     }
 
@@ -218,7 +191,6 @@
         &:focus {
             border-bottom: 2px solid $dark;
         }
-        
     }
 
     &__page-switch-btn {
@@ -228,16 +200,14 @@
         background-color: $btns;
         border: none;
         border-radius: 15px;
-        
+
         svg {
             height: 10px;
             path {
                 fill: $light;
-
             }
         }
     }
-
 }
 
 .hide-btn {

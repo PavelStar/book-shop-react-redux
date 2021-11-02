@@ -1,4 +1,4 @@
-@import './components/variables';
+@import "./components/variables";
 
 *,
 *::before,
@@ -32,15 +32,14 @@ body {
     overflow: scroll;
 }
 
-button, a {
+button,
+a {
     cursor: pointer;
     padding: 0;
 }
 
-
-
 html {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     color: $dark;
     font-size: 14px;
     font-weight: 400;

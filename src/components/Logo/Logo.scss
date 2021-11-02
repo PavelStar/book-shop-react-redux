@@ -1,18 +1,11 @@
-@import '../variables';
-
+@import "../variables";
 
 .logo-link {
-
-
     order: -5;
 
-    
     &__img {
         path {
             fill: $dark;
         }
     }
-      
-    
 }
-

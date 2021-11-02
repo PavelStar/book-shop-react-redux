@@ -1,4 +1,4 @@
-@import '../../variables';
+@import "../../variables";
 
 .history-page {
     width: 1140px;
@@ -19,7 +19,6 @@
         }
     }
 }
-
 
 .order-item {
     margin-bottom: 50px;
@@ -51,17 +50,13 @@
     &__header-inner {
         display: flex;
         flex-direction: column;
-
-       
     }
 
     &__number {
         margin-bottom: 10px;
     }
 
-
     &__info-wrap {
-        
         padding: 10px 20px;
     }
 
@@ -69,18 +64,15 @@
         margin-bottom: 5px;
         display: flex;
     }
-    
+
     &__inner {
         display: flex;
         justify-content: space-between;
     }
-    
-    
-    
+
     &__date {
         margin-right: 50px;
         font-size: 14px;
-        
     }
 
     &__time,
@@ -88,8 +80,6 @@
         font-size: 12px;
         color: $dark;
         margin-right: 20px;
-        
-        
     }
 
     &__title {
@@ -106,6 +96,4 @@
             margin-left: 10px;
         }
     }
-
-
 }

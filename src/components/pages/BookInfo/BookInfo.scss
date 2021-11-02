@@ -1,4 +1,4 @@
-@import '../../variables';
+@import "../../variables";
 
 .book-info {
     width: 1140px;
@@ -14,11 +14,8 @@
     &__inner {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: space-between;
-        
-        
     }
-    
+
     &__img-wrap {
         width: 150px;
         margin-right: 50px;
@@ -37,11 +34,10 @@
     }
 
     &__info-wrapper {
-        
         @media (min-width: 768px) {
             width: 500px;
         }
-        
+
         @media (min-width: 1140px) {
             width: 900px;
         }
@@ -51,10 +47,6 @@
         font-size: 30px;
         line-height: 120%;
         margin-bottom: 10px;
-
-        @media (max-width: 768px) {
-            // font-size: 18px;
-        }
     }
 
     span {
@@ -65,7 +57,6 @@
         font-size: 16px;
         margin-bottom: 60px;
         line-height: 150%;
-        
 
         span {
             display: block;
@@ -83,7 +74,7 @@
 
 .info-list {
     margin-bottom: 50px;
-    
+
     @media (max-width: 768px) {
         font-size: 12px;
         margin-bottom: 20px;

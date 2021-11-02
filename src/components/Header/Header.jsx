@@ -2,34 +2,21 @@ import React from "react";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import Cart from "../cart/Cart";
-import History from "../History/History"
+import History from "../History/History";
 
-import "./Header.scss"
+import "./Header.scss";
 
 const Header = () => {
-
-    
-
-    
-
-    
-    
-    
-
     return (
-        
-        <header className="main-header" >
+        <header className="main-header">
             <div className="main-header__inner">
-                
                 <Logo />
                 <Search />
-                <History/>
-                <Cart/>
+                <History />
+                <Cart />
             </div>
-        </header>    
-        
-        
-    )
-}
+        </header>
+    );
+};
 
 export default Header;
