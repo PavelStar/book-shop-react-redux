@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/book-shop-react-redux/static/css/main.48ffb918.chunk.css",
-    "main.js": "/book-shop-react-redux/static/js/main.08452b7e.chunk.js",
-    "main.js.map": "/book-shop-react-redux/static/js/main.08452b7e.chunk.js.map",
+    "main.css": "/book-shop-react-redux/static/css/main.5718eb73.chunk.css",
+    "main.js": "/book-shop-react-redux/static/js/main.d1b62b84.chunk.js",
+    "main.js.map": "/book-shop-react-redux/static/js/main.d1b62b84.chunk.js.map",
     "runtime-main.js": "/book-shop-react-redux/static/js/runtime-main.f6b81e18.js",
     "runtime-main.js.map": "/book-shop-react-redux/static/js/runtime-main.f6b81e18.js.map",
     "static/js/2.911f3c06.chunk.js": "/book-shop-react-redux/static/js/2.911f3c06.chunk.js",
     "static/js/2.911f3c06.chunk.js.map": "/book-shop-react-redux/static/js/2.911f3c06.chunk.js.map",
     "index.html": "/book-shop-react-redux/index.html",
-    "static/css/main.48ffb918.chunk.css.map": "/book-shop-react-redux/static/css/main.48ffb918.chunk.css.map",
+    "static/css/main.5718eb73.chunk.css.map": "/book-shop-react-redux/static/css/main.5718eb73.chunk.css.map",
     "static/js/2.911f3c06.chunk.js.LICENSE.txt": "/book-shop-react-redux/static/js/2.911f3c06.chunk.js.LICENSE.txt",
     "static/media/ok.fecaf390.png": "/book-shop-react-redux/static/media/ok.fecaf390.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f6b81e18.js",
     "static/js/2.911f3c06.chunk.js",
-    "static/css/main.48ffb918.chunk.css",
-    "static/js/main.08452b7e.chunk.js"
+    "static/css/main.5718eb73.chunk.css",
+    "static/js/main.d1b62b84.chunk.js"
   ]
 }
